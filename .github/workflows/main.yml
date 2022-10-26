@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: "stg-unesync-backend-repo"
   ECS_SERVICE: "backend-svc"          
   ECS_CLUSTER: "stg-unesync-cluster"        
-  ECS_TASK_DEFINITION_FILE: "./stg-unesync-backend-td"
+  ECS_TASK_DEFINITION_FILE: "./stg-unesync-backend-td.json"
   ECS_TASK_DEFINITION: "stg-unesync-backend-td"
   CONTAINER_NAME: "backend-cnt"
   IMAGE_TAG: "latest"
