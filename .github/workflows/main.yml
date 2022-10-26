@@ -6,13 +6,13 @@ on:
       - main
   workflow_dispatch:
 env:
-  AWS_REGION: "us-east-1"               
-  ECR_REPOSITORY: "dockernodrep"
-  ECS_SERVICE: "nataservice"          
-  ECS_CLUSTER: "natacluster"        
-  ECS_TASK_DEFINITION_FILE: "./natataskdef.json"
-  ECS_TASK_DEFINITION: "natataskdef"
-  CONTAINER_NAME: "natanodcontainer"
+  AWS_REGION: "ap-south-1"               
+  ECR_REPOSITORY: "stg-unesync-backend-repo"
+  ECS_SERVICE: "backend-svc"          
+  ECS_CLUSTER: "stg-unesync-cluster"        
+  ECS_TASK_DEFINITION_FILE: "./stg-unesync-backend-td"
+  ECS_TASK_DEFINITION: "stg-unesync-backend-td"
+  CONTAINER_NAME: "backend-cnt"
   IMAGE_TAG: "latest"
   #SECRET_NAME: "dev-backend-secret"
 jobs:
